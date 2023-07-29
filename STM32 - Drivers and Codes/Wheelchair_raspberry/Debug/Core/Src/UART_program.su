@@ -1,0 +1,15 @@
+UART_program.c:22:6:MUART_voidInit	24	static
+UART_program.c:62:6:MUART_voidTransmitCharSync	16	static
+UART_program.c:68:6:MUART_voidTransmitSync	24	static
+UART_program.c:79:4:MUART_u8RecieveCharSync	24	static
+UART_program.c:87:6:MUART_voidSendInteger	32	static
+UART_program.c:114:4:MUART_u8ReceiveInteger	32	static
+UART_program.c:141:6:MUART1_voidSetCallBack	16	static
+UART_program.c:148:6:USART1_IRQHandler	8	static
+UART_program.c:152:6:MUART2_voidSetCallBack	16	static
+UART_program.c:159:6:USART2_IRQHandler	8	static
+UART_program.c:163:6:MUART3_voidSetCallBack	16	static
+UART_program.c:170:6:USART3_IRQHandler	8	static
+UART_program.c:174:4:MUART1_u8ReadDR	4	static
+UART_program.c:178:4:MUART2_u8ReadDR	4	static
+UART_program.c:182:4:MUART3_u8ReadDR	4	static

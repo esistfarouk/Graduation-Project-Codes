@@ -1,0 +1,16 @@
+main.c:66:5:main	8	static
+main.c:138:6:GetDateFromRaspberryPi	16	static
+main.c:157:6:GetDateFromDebug	16	static
+main.c:173:6:Init	8	static
+main.c:283:6:GetTamperature	8	static
+main.c:299:6:ControlWheelchairUsingJoystick	8	static
+main.c:350:6:WheelChair_Forward	8	static
+main.c:361:6:WheelChair_Backward	8	static
+main.c:372:6:WheelChair_Right	8	static
+main.c:383:6:WheelChair_Left	8	static
+main.c:394:6:WheelChair_Stop	8	static
+main.c:405:6:WheelChair_RightForward	8	static
+main.c:416:6:WheelChair_LeftForward	8	static
+main.c:427:6:WheelChair_RightBackward	8	static
+main.c:438:6:WheelChair_LeftBackward	8	static
+main.c:449:4:compare_strings	24	static

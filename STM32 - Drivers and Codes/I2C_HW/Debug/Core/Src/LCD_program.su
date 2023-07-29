@@ -1,0 +1,7 @@
+LCD_program.c:20:6:HLCD_voidInit	8	static
+LCD_program.c:54:6:HLCD_voidSendCommand	16	static
+LCD_program.c:83:6:HLCD_voidSendChar	16	static
+LCD_program.c:111:6:HLCD_voidSendString	24	static
+LCD_program.c:128:6:HLCD_voidClearScreen	8	static
+LCD_program.c:132:6:HLCD_voidGoTo	24	static
+LCD_program.c:151:6:HLCD_voidDisplayNumber	80	static

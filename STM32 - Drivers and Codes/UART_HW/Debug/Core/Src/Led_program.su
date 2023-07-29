@@ -1,0 +1,4 @@
+Led_program.c:11:6:HLed_voidInit	16	static
+Led_program.c:17:6:HLed_voidSetState	16	static
+Led_program.c:25:13:HLed_voidGetState	24	static
+Led_program.c:32:6:HLed_voidTogglee	16	static

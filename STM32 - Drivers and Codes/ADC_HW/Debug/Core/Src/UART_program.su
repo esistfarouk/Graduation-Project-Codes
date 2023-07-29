@@ -1,0 +1,6 @@
+UART_program.c:17:6:MUART_voidInit	24	static
+UART_program.c:57:6:MUART_voidTransmitCharSync	16	static
+UART_program.c:63:6:MUART_voidTransmitSync	24	static
+UART_program.c:74:4:MUART_u8RecieveCharSync	24	static
+UART_program.c:82:6:MUART_voidSendInteger	32	static
+UART_program.c:109:4:MUART_u8ReceiveInteger	32	static

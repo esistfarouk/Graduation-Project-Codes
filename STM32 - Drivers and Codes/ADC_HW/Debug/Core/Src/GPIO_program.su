@@ -1,0 +1,7 @@
+GPIO_program.c:7:6:MDIO_voidSetPinDirection	16	static
+GPIO_program.c:71:6:MDIO_voidSetPinValue	16	static
+GPIO_program.c:115:5:MDIO_u8GetPinValue	24	static
+GPIO_program.c:131:6:MDIO_voidDelay	24	static,ignoring_inline_asm
+GPIO_program.c:139:6:MDIO_voidSetPortDirection	24	static
+GPIO_program.c:148:6:MDIO_voidSetPortValue	16	static
+GPIO_program.c:163:6:MDIO_u16GetPortValue	16	static

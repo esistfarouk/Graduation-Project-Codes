@@ -1,0 +1,224 @@
+/*
+ * UART_interface.h
+ *
+ *  Created on: Aug 30, 2022
+ *      Author: FAROUK
+ */
+
+#ifndef MCAL_UART_UART_INTERFACE_H_
+#define MCAL_UART_UART_INTERFACE_H_
+
+typedef enum
+{
+	UART1,
+	UART2,
+	UART3,
+	UART4,
+	UART5
+}UART_NUMBER_t;
+
+typedef enum
+{
+	UART_DISABLE,
+	UART_ENABLE
+}UART_Enable_State_t;
+
+typedef enum
+{
+	UART_EIGHT_BITS,
+	UART_NINE_BITS
+}UART_WORD_LENGTH_t;
+
+typedef enum
+{
+	UART_IDLE_LINE,
+	UART_ADDRESS_MARK
+}UART_WAKEUP_t;
+
+typedef enum
+{
+	UART_PARITY_DISABLED,
+	UART_PARITY_ENABLED
+}UART_PARITY_CONTROL_ENABLE_t;
+
+typedef enum
+{
+	UART_EVEN_PARITY,
+	UART_ODD_PARITY
+}UART_PARITY_SELECTION_t;
+
+typedef enum
+{
+	UART_INTERRUPT_IS_INHIBITED_PE,
+	UART_INTERRUPT_ENABLE_PE
+}UART_PEIE_t;
+
+typedef enum
+{
+	UART_INTERRUPT_IS_INHIBITED_TXE,
+	UART_INTERRUPT_ENABLE_TXE
+}UART_TXEIE_t;
+
+typedef enum
+{
+	UART_INTERRUPT_IS_INHIBITED_TC,
+	UART_INTERRUPT_ENABLE_TC
+}UART_TCIE_t;
+
+typedef enum
+{
+	UART_INTERRUPT_IS_INHIBITED_RXNE,
+	UART_INTERRUPT_ENABLE_RXNE
+}UART_RXNEIE_t;
+
+typedef enum
+{
+	UART_INTERRUPT_IS_INHIBITED_IDLE,
+	UART_INTERRUPT_ENABLE_IDLE
+}UART_IDLEIE_t;
+
+typedef enum
+{
+	UART_TRANSMITTER_DISABLE,
+	UART_TRANSMITTER_ENABLE
+}UART_TE_t;
+
+typedef enum
+{
+	UART_RECEIVER_DISABLE,
+	UART_RECEIVER_ENABLE
+}UART_RE_t;
+
+typedef enum
+{
+	UART_RECEIVER_ACTIVE_MODE,
+	UART_RECEIVER_MUTE_MODE
+}UART_RWU_t;
+
+typedef enum
+{
+	UART_NO_BREAK_CHARACTER,
+	UART_BREAK_CHARACTER
+}UART_SBK_t;
+
+typedef enum
+{
+	UART_LIN_DISABLE,
+	UART_LIN_ENABLE
+}UART_LINEN_t;
+
+typedef enum
+{
+	UART_ONE_STOP_BIT,
+	UART_HALF_STOP_BIT,
+	UART_TWO_STOP_BIT,
+	UART_ONE_AND_HALF_STOP_BIT
+}UART_STOP_t;
+
+typedef enum
+{
+	UART_CLK_DISABLE,
+	UART_CLK_ENABLE
+}UART_CLKEN_t;
+
+typedef enum
+{
+	UART_CLK_STEADY_LOW,
+	UART_CLK_STEADY_HIGH
+}UART_CPOL_t;
+
+typedef enum
+{
+	UART_CAPTURE_FIRST_EDGE,
+	UART_CAPTURE_SECOND_EDGE
+}UART_CPHA_t;
+
+typedef enum
+{
+	UART_NO_MSB_CLK_PULSE,
+	UART_MSB_CLK_PULSE,
+}UART_LBCL_t;
+
+typedef enum
+{
+	UART_INTERRUPT_IS_INHIBITED_LBD,
+	UART_INTERRUPT_ENABLE_LBD
+}UART_LBDIE_t;
+
+typedef enum
+{
+	UART_LIN_TEN_BIT_BREAK_DETECTION,
+	UART_LIN_ELEVEN_BIT_BREAK_DETECTION
+}UART_LBDL_t;
+
+typedef enum
+{
+	UART_DMA_TRANSMITTER_DISABLE,
+	UART_DMA_TRANSMITTER_ENABLE
+}UART_DMAT_t;
+
+typedef enum
+{
+	UART_DMA_RECEIVER_DISABLE,
+	UART_DMA_RECEIVER_ENABLE
+}UART_DMAR_t;
+
+typedef enum
+{
+	UART_FULL_DUPLEX,
+	UART_HALF_DUPLEX
+}UART_HDSEL_t;
+
+typedef enum
+{
+	UART_INTERRUPT_IS_INHIBITED_EIE,
+	UART_INTERRUPT_ENABLE_EIE
+}UART_EIE_t;
+
+typedef struct
+{
+	UART_NUMBER_t 					UART_NUM;
+	UART_Enable_State_t 			UART_ENABLE_STATE;
+	UART_WORD_LENGTH_t 				UART_WORD_LENGTH;
+	UART_WAKEUP_t 					UART_WAKEUP;
+	UART_PARITY_CONTROL_ENABLE_t 	UART_PARITY_CONTROL_ENABLE;
+	UART_PARITY_SELECTION_t 		UART_PARITY_SELECTION;
+	UART_PEIE_t 					UART_PEIE;
+	UART_TXEIE_t 					UART_TXEIE;
+	UART_TCIE_t 					UART_TCIE;
+	UART_RXNEIE_t                   UART_RXNEIE;
+	UART_IDLEIE_t                   UART_IDLEIE;
+	UART_TE_t                       UART_TE;
+	UART_RE_t                       UART_RE;
+	UART_RWU_t                      UART_RWU;
+	UART_SBK_t                      UART_SBK;
+	UART_LINEN_t                    UART_LINEN;
+	UART_STOP_t                     UART_STOP;
+	UART_CLKEN_t                    UART_CLKEN;
+	UART_CPOL_t                   	UART_CPOL;
+	UART_CPHA_t                     UART_CPHA;
+	UART_LBCL_t                     UART_LBCL;
+	UART_LBDIE_t                    UART_LBDIE;
+	UART_LBDL_t                     UART_LBDL;
+	UART_DMAT_t                     UART_DMAT;
+	UART_DMAR_t                     UART_DMAR;
+	UART_HDSEL_t                    UART_HDSEL;
+	UART_EIE_t                      UART_EIE;
+	u8 								UART_ADD;
+	u32								UART_BaudRate;
+
+}UART_Config_t;
+
+void MUART_voidInit(UART_Config_t *copy_UARTNum);
+
+void MUART_voidTransmitCharSync(UART_Config_t *copy_UARTNum, u8 data);
+
+void MUART_voidTransmitSync(UART_Config_t *copy_UARTNum, u8 arr[]);
+
+u8 MUART_u8RecieveCharSync(UART_Config_t *copy_UARTNum);
+
+void MUART_voidSendInteger(UART_Config_t *copy_UARTNum, u8 copy_u8IntegerData);
+
+u8 MUART_u8ReceiveInteger(UART_Config_t *copy_UARTNum);
+
+#endif /* MCAL_UART_UART_INTERFACE_H_ */

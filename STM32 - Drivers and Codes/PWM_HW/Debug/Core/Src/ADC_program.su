@@ -1,0 +1,3 @@
+ADC_program.c:16:6:MADC1_voidInit	8	static
+ADC_program.c:27:5:MADC1_u16StartConversion_Channel_0	16	static
+ADC_program.c:39:5:MADC1_u16StartConversion_Channel_1	16	static

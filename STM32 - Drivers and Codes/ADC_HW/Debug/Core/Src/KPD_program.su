@@ -1,0 +1,2 @@
+KPD_program.c:21:6:H_KPD_void_Init	16	static
+KPD_program.c:37:4:H_KPD_u8_GetPressedKey	16	static
