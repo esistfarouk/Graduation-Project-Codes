@@ -16,13 +16,11 @@ i2c = io.I2C(board.SCL, board.SDA, frequency=100000)
 mlx = adafruit_mlx90614.MLX90614(i2c)
 
 while True:
-	try:
-		ambientTemp = "{:.2f}".format(mlx.ambient_temperature)
-		targetTemp = "{:.2f}".format(mlx.object_temperature)
-		sleep(1)
-		data = {'TEMP':mlx.object_temperature}
-		response = firebase_app.patch('/Database/lib20', data)
-		print('Data sent to Firebase:', response)
-		print("Target Temperature:", targetTemp,"°C")
-	except:
-		print("Error")
+	ambientTemp = "{:.2f}".format(mlx.ambient_temperature)
+	targetTemp = "{:.2f}".format(mlx.object_temperature)
+	sleep(1)
+	data = {'TEMP':mlx.object_temperature}
+	response = firebase_app.patch('/Database/lib20', data)
+	print('Data sent to Firebase:', response)
+	print("Target Temperature:", targetTemp,"°C")
+
